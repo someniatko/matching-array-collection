@@ -6,6 +6,11 @@ namespace Someniatko\MatchingArrayCollection;
 
 use Doctrine\Common\Collections\Criteria;
 
+/**
+ * @psalm-template TKey of array-key
+ * @psalm-template T
+ * @template-extends \Doctrine\Common\Collections\ArrayCollection<TKey,T>
+ */
 final class ArrayCollection extends \Doctrine\Common\Collections\ArrayCollection
 {
     public function matching(Criteria $criteria)
