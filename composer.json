@@ -1,0 +1,15 @@
+{
+    "name": "someniatko/matching-array-collection",
+    "description": "improves ArrayCollection#matching() to allow usage of Embeddables in Criteria",
+    "type": "library",
+    "require": {
+        "doctrine/collections": "^1.6",
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Someniatko\\MatchingArrayCollection\\": "src"
+        }
+    },
+    "license": "MIT"
+}
